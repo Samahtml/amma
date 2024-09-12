@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <style>
+        .body{background-color:tomato;
+
+               display: flex; 
+            align-items: center;
+        justify-content: center;
+       padding-top: 100px;  }
+       .div{background-color: tomato;
+        border-radius: 4rem;/*height:70px;
+        width:90px;*/display: flex; }
+         .text{background-color:black;color: 
+             aqua;margin: 20px;padding: 20px;
+            display: flex; float: left;}
+        img{height: 100px;
+            width: 100px;
+            border-radius: 3rem;display: flex;
+        margin-left: 75px;margin-right: 75px;}
+            *{margin:0px;padding:0px;
+ list-style-type:none;
+ text-decoration:none;}
+nav{background-color:black;
+    height:80px;width:100%;}
+  nav ul{float:right;margin-right:20px;}
+nav ul li{display:inline-block;padding:20px;}
+ footer{position:fixed;bottom:0;width:100%;
+       background-color:gold;padding:10px;text-align:center;}
+      .header{color: aqua;}
+    
+</style>
+     
+</head>
+<body>
+    
+    <nav>
+    <ul>
+    <li><a href="#">Home <form>
+      <select>
+        <option>location</option>
+        <option>find us</option>
+        <option>blogs</option>
+    </select>
+    </form>
+    </a></li>
+    <li><a href="#">about us<form>
+      <select>
+        <option>home delivers</option>
+        <option>great fashion selects</option>
+        <option>chosen with a passion</option>
+    </select>
+    </form></a></li>
+    <li><a href="#">Services<form>
+      <select>
+        <option>already made fits</option>
+        <option>tailoring services</option>
+        <option>we custom make</option></select>
+    </form></a></li>
+    <li><a href="#">contact<form>
+      <select>
+        <option>0757135131</option>
+        <option>ameliaankunda@gmail.com</option>
+        <option>P.O.Box12274</option>
+    </select>
+    </form></a></li>
+    </ul>
+    </nav>
+    <marquee><h1 class="head1">MUSHY FASHION COLLECTIONS</h1></marquee>
+    <body onload="startTime()">
+
+        <h2>READY IN  </h2>
+        
+        <div id="txt"></div>
+        
+        <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+    
+
+    <div class="img">
+        <img src="mushy.JPG"alt="">
+        </div>
+        <div class="text">
+            <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                confidence and charisma,<br> a symphony of elegance and charm that transcends
+                Hello Fashion.<br>
+                 Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her 
+                 favorite sales and fashion buys.<br> The platform contains posts ...
+
+            </p>
+        </div>
+        <div class="img">
+            <img src="pin5.jpg"alt="">
+            </div>
+            <div class="text">
+                <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                    confidence and charisma,<br> a symphony of elegance and charm that transcends
+                    Hello Fashion.<br>
+                     Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                      favorite sales and fashion buys.<br> The platform contains posts ...
+
+                </p>
+            </div>
+            
+        </div>
+        <div class="img">
+            <img src="pin3.jpg"alt="">
+            </div>
+            <div class="text">
+                <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                    confidence and charisma,<br> a symphony of elegance and charm that transcends
+                    Hello Fashion.<br>
+                     Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                      favorite sales and fashion buys.<br> The platform contains posts ...
+
+                </p>
+            </div>
+            
+        </div>
+        <div class="img">
+            <img src="pin4.jpg"alt="">
+            </div>
+            <div class="text">
+                <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                     confidence and charisma,<br> a symphony of elegance and charm that transcends
+                    Hello Fashion.<br>
+                     Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                      favorite sales and fashion buys.<br> The platform contains posts ...
+
+                </p>
+            </div>
+            <div class="img">
+                <img src="pin17.jpg"alt="">
+                </div>
+                <div class="text">
+                    <p>These fashion styles for women are more than just clothes,<br> they are an expression of 
+                        confidence and charisma,<br> a symphony of elegance and charm that<br> transcends
+                        Hello Fashion.<br>
+                         Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                          favorite sales and fashion buys.<br> The platform contains posts ...
+    
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="pin28.jpg"alt="">
+                    </div>
+                    <div class="text">
+                        <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                            confidence and charisma, <br>a symphony of elegance and charm that transcends
+                            Hello Fashion.<br>
+                             Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                              favorite sales and fashion buys.<br> The platform contains posts ...
+        
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="pin20.jpg"alt="">
+                        </div>
+                        <div class="text">
+                            <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                                confidence and charisma, <br>a symphony of elegance and charm that transcends
+                                Hello Fashion.<br>
+                                 Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                                  favorite sales and fashion buys.<br> The platform contains posts ...
+            
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="pin15.jpg">
+                            <img src="pin43.jpg">
+                            <img src="pin45.jpg"
+                             alt="">
+                            </div>
+                            <div class="text">
+                                <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                                    confidence and charisma,<br> a symphony of elegance and charm that transcends
+                                    Hello Fashion.<br>
+                                     Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                                      favorite sales and fashion buys.<br> The platform contains posts ...
+                
+                                </p>
+                            </div>
+                            <div class="img">
+                                <img src="pin39.jpg"alt="">
+                                </div>
+                                <div class="text">
+                                    <p>These fashion styles for women are more than just clothes,<br> they are an expression of
+                                        confidence and charisma, a symphony of elegance and charm that transcends
+                                        Hello Fashion.<br>
+                                         Christine Andrew from Salt Lake City started<br> Hello Fashion in 2011 to share her
+                                          favorite sales and fashion buys.<br> The platform contains posts ...
+                    
+                                    </p>
+                                </div>
+                              
+                              <footer class="footer">
+                              <p>&copy 2024 MUSHY COLLECTIONS . All rights reserved .</p>
+                                       </footer>
+        </div>
+</body>
+</html>
